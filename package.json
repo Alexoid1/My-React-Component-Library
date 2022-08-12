@@ -2,8 +2,8 @@
   "name": "my-react-component-library",
   "version": "1.0.0",
   "description": "React library",
-  "main": "index.js",
   "scripts": {
+    "rollup": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,16 +16,21 @@
     "url": "https://github.com/Alexoid1/My-React-Component-Library/issues"
   },
   "homepage": "https://github.com/Alexoid1/My-React-Component-Library#readme",
-  "dependencies": {
-    "react": "^18.2.0",
-    "typescript": "^4.7.4"
-  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.4",
     "@types/react": "^18.0.17",
+    "react": "^18.2.0",
     "rollup": "^2.77.3",
-    "rollup-plugin-dts": "^4.2.2"
-  }
+    "rollup-plugin-dts": "^4.2.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
 }
