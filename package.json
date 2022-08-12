@@ -1,5 +1,5 @@
 {
-  "name": "my-react-component-library",
+  "name": "pabloz-component-library",
   "version": "1.0.0",
   "description": "React library",
   "scripts": {
@@ -32,5 +32,9 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Alexoid1"
+  }
+
 }
