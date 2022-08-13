@@ -1,5 +1,5 @@
 {
-  "name": "@alexoid1/PabloZ-Component-Library",
+  "name": "@alexoid1/pabloz-component-ibrary",
   "version": "1.0.0",
   "description": "React library",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alexoid1/My-React-Component-Library.git"
+    "url": "git+https://github.com/Alexoid1/pabloz-component-library.git"
   },
   "author": "Pablo Zambrano (https://github.com/Alexoid1)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Alexoid1/My-React-Component-Library/issues"
+    "url": "https://github.com/Alexoid1/pabloz-component-library/issues"
   },
-  "homepage": "https://github.com/Alexoid1/My-React-Component-Library#readme",
+  "homepage": "https://github.com/Alexoid1/pabloz-component-library#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
