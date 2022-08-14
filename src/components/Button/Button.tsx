@@ -35,13 +35,13 @@ export default class Button extends React.Component<ButtonProps,MyState> {
       margin: "5px 25px", 
       border: `3px solid ${this.state.color}`, 
       borderRadius: "10px",
-      background: this.state.color
+      background: "white",
+      
     };
   
     const anchorC: React.CSSProperties = {
-      position: "relative", 
-      display: "inline-block", 
-      color: "black", 
+      color: "black",
+      display: "inherit", 
       overflow: "hidden", 
       background: "linear-gradient(to right, rgb(255, 196, 0), rgb(255, 102, 0), 50%, black 50%)", 
       backgroundClip: "text", 
@@ -54,7 +54,7 @@ export default class Button extends React.Component<ButtonProps,MyState> {
     }
     return <button style={buttonCreate} 
       type="button" 
-      onMouseEnter={()=>this.hoverInButton()} 
+      onMouseOver={()=>this.hoverInButton()} 
       onMouseOut={()=>this.hoverOutButton()}>
       <a style={anchorC} href="#">{this.props.label}</a>
     </button>
