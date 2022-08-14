@@ -54,8 +54,8 @@ export default class Button extends React.Component<ButtonProps,MyState> {
     }
     return <button style={buttonCreate} 
       type="button" 
-      onMouseEnter={()=>this.hoverInButton} 
-      onMouseOut={()=>this.hoverOutButton}>
+      onMouseEnter={()=>this.hoverInButton()} 
+      onMouseOut={()=>this.hoverOutButton()}>
       <a style={anchorC} href="#">{this.props.label}</a>
     </button>
 
