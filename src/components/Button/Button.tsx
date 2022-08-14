@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 
 
 interface ButtonProps {
-  label: string,
-  variant: string
+  label: string
 }
 
 
