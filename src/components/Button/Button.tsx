@@ -8,12 +8,12 @@ interface ButtonProps {
 
 
 
-function Button (props: ButtonProps){
+const Button = (props: ButtonProps) => {
  if(props.variant==="cromatic"){
     return <button className="buttonCreate" type="button">
     <a className="anchorC" href="#">{props.label}</a>
   </button>;
- }else if (props.variant){
+ }else if (props.variant === "simple"){
   return <button type="button" className="searchBook">{props.label}</button>
  }
 }
