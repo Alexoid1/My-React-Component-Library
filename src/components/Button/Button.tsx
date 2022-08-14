@@ -38,7 +38,7 @@ const Button = (props: ButtonProps) =>  {
   }
 
   function hoverInButton(){
-    setHoverstyle({color:"rgb(255, 196, 0",position: "0 100%"})
+    setHoverstyle({color:"rgb(255, 196, 0)",position: "0 100%"})
   }
 
   function hoverOutButton(){
