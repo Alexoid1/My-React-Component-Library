@@ -1,6 +1,6 @@
 {
   "name": "@alexoid1/pabloz-component-library",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React library",
   "scripts": {
     "rollup": "rollup -c",

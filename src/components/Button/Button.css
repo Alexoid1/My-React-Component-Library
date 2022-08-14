@@ -33,3 +33,16 @@
 .buttonCreate:hover > .anchorC {
     background-position: 0 100%;
 }
+
+.searchBook {
+    background: #0290ff;
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    border: none;
+}
+    
+.searchBook:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
