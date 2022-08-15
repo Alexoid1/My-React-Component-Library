@@ -29,7 +29,17 @@ export default class Button2 extends React.Component<ButtonProps,MyState> {
     this.setState({left:"-100%", right: "-100%", top: "-100%", bottom: "-100%"})
   }
   render(){
-    
+    const div: React.CSSProperties = {
+        justifyContent: "center", 
+        alignItems: "center", 
+        display: "flex", 
+        width: "300px",
+        height: "100px",
+        position: "relative",
+        overflow: 'hidden',
+        paddingTop: "20px"
+        
+    };
   
     const button: React.CSSProperties = {
         border: "none", 
@@ -83,7 +93,7 @@ export default class Button2 extends React.Component<ButtonProps,MyState> {
         transition: "all 1s"
     }
 
-    return <div>
+    return <div style={div}>
         <div style={before}></div>
         <button style={button} onMouseOver={()=>this.hoverInButton()} 
     onMouseOut={()=>this.hoverOutButton()}>
