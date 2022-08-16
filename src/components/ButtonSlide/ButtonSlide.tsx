@@ -11,7 +11,7 @@ type MyState = {
   top: string;
   bottom: string;
 };
-export default class Button2 extends React.Component<ButtonProps,MyState> {
+export default class ButtonSlide extends React.Component<ButtonProps,MyState> {
   
   state: MyState = {
     left: "-100%",
@@ -29,26 +29,31 @@ export default class Button2 extends React.Component<ButtonProps,MyState> {
     this.setState({left:"-100%", right: "-100%", top: "-100%", bottom: "-100%"})
   }
   render(){
-    const div: React.CSSProperties = {
-        justifyContent: "center", 
-        alignItems: "center", 
-        display: "flex", 
-        width: "300px",
-        height: "107px",
-        position: "relative",
-        overflow: 'hidden',  
+    const btnSlide: React.CSSProperties = {
+        position: "relative", 
+        display: "inline-block", 
+        height: "50px", 
+        width: "240px", 
+        lineHeight: "50px", 
+        margin: "25px 0", 
+        padding: "0px", 
+        borderRadius: "25px", 
+        boxShadow: "0 10px 20px -8px rgba(0, 0, 0,0.7)", 
+        background: "linear-gradient(135deg, #e570e7 0%,#79f1fc 100%)" 
     };
   
-    const button: React.CSSProperties = {
-        border: "none", 
-        fontSize: "25px", 
-        height: "100px", 
-        width: "300px", 
-        textTransform: "uppercase", 
-        letterSpacing: "10px", 
-        backgroundColor: "white", 
-        position: "relative", 
-        overflow: "hidden"
+    const circle: React.CSSProperties = {
+        display: "block", 
+        backgroundColor: "#fff", 
+        color: "#e570e7", 
+        position: "absolute", 
+        margin: "5px", 
+        height: "40px", 
+        width: "40px", 
+        top: "0", 
+        left: "0", 
+        borderRadius: "50%", 
+        transition: "all 1.5s ease"
     }
 
     const before: React.CSSProperties = {
@@ -91,17 +96,17 @@ export default class Button2 extends React.Component<ButtonProps,MyState> {
         transition: "all 1s"
     }
 
-    return <div style={div}>
-        <div style={before}></div>
-        <button style={button} onMouseOver={()=>this.hoverInButton()} 
-    onMouseOut={()=>this.hoverOutButton()}>
-            <div style={spanBefore}></div>
-            {this.props.label}
-            <span></span>
-            <div style={spanAfter}></div>
-        </button>
-        <div style={after}></div>
-    </div>
+    return 
+        <div> 
+            <a style={btnSlide} >
+                <span style={circle}>
+                <i class="fa-solid fa-film"></i>        
+                </span>
+            
+                <span class="title">Save Movie</span>
+                <span class="title title-hover">720p Hindi HD</span>
+            </a> 
+        </div>  
 
   }
 }
